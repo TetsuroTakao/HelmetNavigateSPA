@@ -1,0 +1,31 @@
+@using React.AspNet
+@using React.RenderFunctions
+@using React.Router
+@using SampleApp.Models
+@using System.Web
+@using System.Text
+
+@model React.Sample.Webpack.CoreMvc.Controllers.HomeController.IndexViewModel
+
+@{
+    Layout = "_Layout";
+    //var emotionFunctions = new EmotionFunctions();
+    //var styledComponentsFunctions = new StyledComponentsFunctions();
+    //var reactJssFunctions = new ReactJssFunctions();
+    var helmetFunctions = new ReactHelmetFunctions();
+    //var chainedFunctions = new ChainedRenderFunctions(emotionFunctions, styledComponentsFunctions, reactJssFunctions, helmetFunctions);
+    var chainedFunctions = new ChainedRenderFunctions(helmetFunctions);
+    bool isSignin = ViewBag.IsSignin ?? false;
+}
+@*@Html.ReactRouter("Components.RootComponent", new { initialComments = Model.Comments, page = Model.Page }, renderFunctions: chainedFunctions)*@
+@Html.ReactRouter("Components.RootComponent",props:new { }, renderFunctions: chainedFunctions)
+@{
+    //ViewBag.ServerStyles = styledComponentsFunctions.RenderedStyles + reactJssFunctions.RenderedStyles;
+    if (isSignin)
+    {
+        helmetFunctions.RenderedHelmet?.Remove("style");
+        helmetFunctions.RenderedHelmet?.Add("style", "<style>.navbar{background-color: #A4C6FF;}</style>");
+        ViewBag.Style = helmetFunctions.RenderedHelmet?.GetValueOrDefault("style");
+    }
+    ViewBag.HelmetTitle = helmetFunctions.RenderedHelmet?.GetValueOrDefault("title");
+}

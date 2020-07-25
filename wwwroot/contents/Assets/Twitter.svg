@@ -1,0 +1,21 @@
+﻿<svg width="180" height="30" xmlns="http://www.w3.org/2000/svg">
+    <style type="text/css">
+        .cls-1 {
+            fill: none;
+        }
+
+        .cls-2 {
+            fill: #1da1f2;
+        }
+    </style>
+    <title>Twitter_Logo_Blue</title>
+    <g>
+        <title>background</title>
+        <rect x="-1" y="-1" width="46.99998" height="9.5" id="canvas_background" fill="none" />
+    </g>
+    <g>
+        <title>Layer 1</title>
+        <path class="cls-2" d="m11.60579,28.38793c11.22647,0 17.36687,-10.24929 17.36687,-19.13744c0,-0.29111 0,-0.58092 -0.01785,-0.86941a12.41885,13.68496 0 0 0 3.04521,-3.48156a12.18323,13.42532 0 0 1 -3.50574,1.05824a6.12493,6.74938 0 0 0 2.68345,-3.72022a12.23202,13.47908 0 0 1 -3.87583,1.6326a6.10946,6.73233 0 0 0 -10.4018,6.13437a17.32879,19.09547 0 0 1 -12.5795,-7.02738a6.10827,6.73102 0 0 0 1.88972,8.97862a6.05829,6.67594 0 0 1 -2.77032,-0.84187c0,0.02754 0,0.05639 0,0.08524a6.10589,6.72839 0 0 0 4.89685,6.59333a6.09399,6.71528 0 0 1 -2.75604,0.1154a6.11065,6.73364 0 0 0 5.70248,4.67093a12.24749,13.49613 0 0 1 -7.58031,2.88491a12.4248,13.69152 0 0 1 -1.45299,-0.09704a17.28,19.04171 0 0 0 9.35579,3.01604" id="svg_2" stroke="null" />
+        <text fill="#000000" stroke="null" stroke-width="0" stroke-opacity="null" fill-opacity="null" x="40.62502" y="23.23632" id="svg_3" font-size="24" font-family="Helvetica Neue, Arial, sans-serif" text-anchor="start" xml:space="preserve" font-weight="bold">Twitter</text>
+    </g>
+</svg>
